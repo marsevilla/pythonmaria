@@ -35,8 +35,8 @@ def bibliotheque():
         # AJOUTER un livre
         if choix == 1:
             try:
-                titre = input("\nEntrez le titre du livre : ").strip()
-                auteur = input("Entrez le nom de l'auteur : ").strip()
+                titre = input("\nEntrez le titre du livre : ").strip().lower()
+                auteur = input("Entrez le nom de l'auteur : ").strip().lower()
                 date = input("Entrez la date de publication : ").strip()
                 livre = Livre(titre, auteur, date)
                 # Utilisation de append() pour ajouter un element a la fin de la liste
